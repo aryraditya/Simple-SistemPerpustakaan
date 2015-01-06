@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C6D73B44-524F-4FB2-8908-106E38933951}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Perpustakaan</RootNamespace>
+    <AssemblyName>Perpustakaan</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="class\Book.cs" />
+    <Compile Include="class\BookCategory.cs" />
+    <Compile Include="class\BookLoan.cs" />
+    <Compile Include="class\BookReturn.cs" />
+    <Compile Include="class\ComboItem.cs" />
+    <Compile Include="class\DataGridViewHelper.cs" />
+    <Compile Include="class\dbPerpus.cs" />
+    <Compile Include="class\AppSettings.cs" />
+    <Compile Include="forms\App\Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\App\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Buku\BukuCreateUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Buku\BukuCreateUpdate.Designer.cs">
+      <DependentUpon>BukuCreateUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Buku\BukuView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Buku\BukuView.Designer.cs">
+      <DependentUpon>BukuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Buku\CategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Buku\CategoryForm.Designer.cs">
+      <DependentUpon>CategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Buku\CategoryMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Buku\CategoryMain.Designer.cs">
+      <DependentUpon>CategoryMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Buku\frmBuku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Buku\frmBuku.Designer.cs">
+      <DependentUpon>frmBuku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Transactions\frmBorrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Transactions\frmBorrow.Designer.cs">
+      <DependentUpon>frmBorrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Transactions\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Transactions\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Transactions\frmReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Transactions\frmReturn.Designer.cs">
+      <DependentUpon>frmReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Transactions\frmView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Transactions\frmView.Designer.cs">
+      <DependentUpon>frmView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="perpusDataSet.cs">
+      <DependentUpon>perpusDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="perpusDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>perpusDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="forms\App\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Buku\BukuCreateUpdate.resx">
+      <DependentUpon>BukuCreateUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Buku\BukuView.resx">
+      <DependentUpon>BukuView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Buku\CategoryForm.resx">
+      <DependentUpon>CategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Buku\CategoryMain.resx">
+      <DependentUpon>CategoryMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Buku\frmBuku.resx">
+      <DependentUpon>frmBuku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Transactions\frmBorrow.resx">
+      <DependentUpon>frmBorrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Transactions\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Transactions\frmReturn.resx">
+      <DependentUpon>frmReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Transactions\frmView.resx">
+      <DependentUpon>frmView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="perpusDataSet.xsc">
+      <DependentUpon>perpusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="perpusDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>perpusDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="perpusDataSet.xss">
+      <DependentUpon>perpusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b_view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down88.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
