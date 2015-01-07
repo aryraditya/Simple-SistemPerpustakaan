@@ -18,6 +18,7 @@ namespace Perpustakaan.forms.Buku
         public CategoryForm(int _id=0)
         {
             InitializeComponent();
+            this.CenterToScreen();
             Id = _id;
             if (Id != 0)
             {
@@ -40,6 +41,11 @@ namespace Perpustakaan.forms.Buku
         private void BtnSimpan_Click(object sender, EventArgs e)
         {
             bc.name = TxtKategori.Text;
+            if (bc.name == "")
+            {
+                MessageBox.Show("Masukkan nama kategori");
+                return;
+            }
             bc.save();
             MessageBox.Show("Data Sudah Disimpan");
             if(System.Windows.Forms.Application.OpenForms["CategoryMain"] != null)

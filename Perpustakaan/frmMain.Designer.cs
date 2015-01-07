@@ -30,6 +30,7 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.applicationSettingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,7 +42,6 @@
             this.transactionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutEAMPerpustakaanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.applicationSettingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +54,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(638, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1008, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -68,6 +68,13 @@
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
+            // 
+            // applicationSettingToolStripMenuItem
+            // 
+            this.applicationSettingToolStripMenuItem.Name = "applicationSettingToolStripMenuItem";
+            this.applicationSettingToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
+            this.applicationSettingToolStripMenuItem.Text = "Application Setting";
+            this.applicationSettingToolStripMenuItem.Click += new System.EventHandler(this.applicationSettingToolStripMenuItem_Click);
             // 
             // logoutToolStripMenuItem
             // 
@@ -143,22 +150,18 @@
             // aboutEAMPerpustakaanToolStripMenuItem
             // 
             this.aboutEAMPerpustakaanToolStripMenuItem.Name = "aboutEAMPerpustakaanToolStripMenuItem";
-            this.aboutEAMPerpustakaanToolStripMenuItem.Size = new System.Drawing.Size(209, 22);
-            this.aboutEAMPerpustakaanToolStripMenuItem.Text = "About EAM Perpustakaan";
-            // 
-            // applicationSettingToolStripMenuItem
-            // 
-            this.applicationSettingToolStripMenuItem.Name = "applicationSettingToolStripMenuItem";
-            this.applicationSettingToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.applicationSettingToolStripMenuItem.Text = "Application Setting";
-            this.applicationSettingToolStripMenuItem.Click += new System.EventHandler(this.applicationSettingToolStripMenuItem_Click);
+            this.aboutEAMPerpustakaanToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.aboutEAMPerpustakaanToolStripMenuItem.Text = "About SSP Perpustakaan";
+            this.aboutEAMPerpustakaanToolStripMenuItem.Click += new System.EventHandler(this.aboutEAMPerpustakaanToolStripMenuItem_Click);
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(638, 432);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1008, 612);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";

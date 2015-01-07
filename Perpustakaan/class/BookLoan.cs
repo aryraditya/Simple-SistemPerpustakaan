@@ -63,8 +63,20 @@ namespace Perpustakaan
             string query = "DELETE FROM book_loan WHERE loan_id=@id";
             SqlCommand cmd = new SqlCommand(query, db.conn);
             cmd.Parameters.AddWithValue("@id", idPeminjaman);
-            cmd.ExecuteNonQuery();
 
+            try
+            {
+                cmd.ExecuteNonQuery();
+                if (!isReturned())
+                {
+                    book.quantity = book.quantity + 1;
+                    book.save();
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+            }
             db.closeConnection();
         }
 
@@ -97,6 +109,7 @@ namespace Perpustakaan
             cmd.Parameters.AddWithValue("@cardNo", cardNo);
             cmd.Parameters.AddWithValue("@expDate", dateExp);
             cmd.Parameters.AddWithValue("@bookId", bookId);
+            cmd.Parameters.AddWithValue("@idPeminjaman", idPeminjaman);
             cmd.ExecuteNonQuery();
             db.closeConnection();
         }
@@ -151,7 +164,7 @@ namespace Perpustakaan
             return bl;
         }
 
-        public static List<BookLoan> findAll(string _name = null, string _bookname = null)
+        public static List<BookLoan> findAll(int? _idPeminjaman = null, string _name = null, string _bookname = null, DateTime? _dt=null, Boolean? _status=null)
         {
             db.openConnection();
             List<BookLoan> results = new List<BookLoan>();
@@ -159,7 +172,23 @@ namespace Perpustakaan
                     "INNER JOIN book b ON l.book_id=b.book_id " +
                     "LEFT JOIN book_return r ON l.loan_id=r.loan_id " +
                     "WHERE loan_name LIKE '%" + _name + "%' AND book_name LIKE '%" + _bookname + "%'";
+            if(_idPeminjaman!=null)
+                sql += " AND l.loan_id="+_idPeminjaman;
+
+            if (_dt != null)
+                sql += " AND convert(date,loan_date)='" + _dt.Value.ToString("yyyy-MM-dd") + "'";
+
+            if (_status != null)
+            {
+                if (_status==true)
+                    sql += " AND return_date IS NOT NULL";
+                else
+                    sql += " AND return_date IS NULL";
+            }
+
+
             SqlCommand cmd = new SqlCommand(sql, db.conn);
+            //cmd.Parameters.AddWithValue("@dt", _dt);
             SqlDataReader reader = cmd.ExecuteReader();
 
             if (reader.HasRows)

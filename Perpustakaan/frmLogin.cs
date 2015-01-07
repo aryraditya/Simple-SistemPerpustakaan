@@ -19,6 +19,8 @@ namespace Perpustakaan
         {
             InitializeComponent();
             this.CenterToScreen();
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -66,6 +68,16 @@ namespace Perpustakaan
         {
             base.OnClosing(e);
             Application.Exit();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

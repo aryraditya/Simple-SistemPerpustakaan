@@ -13,6 +13,22 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>G:\Publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -32,6 +48,24 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>812AE39A244305B5A3D6CC1581392836F319D024</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Perpustakaan_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -55,6 +89,12 @@
     <Compile Include="class\DataGridViewHelper.cs" />
     <Compile Include="class\dbPerpus.cs" />
     <Compile Include="class\AppSettings.cs" />
+    <Compile Include="forms\App\frmHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\App\frmHelp.Designer.cs">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\App\Settings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,11 +137,11 @@
     <Compile Include="forms\Transactions\frmBorrow.Designer.cs">
       <DependentUpon>frmBorrow.cs</DependentUpon>
     </Compile>
-    <Compile Include="forms\Transactions\frmMain.cs">
+    <Compile Include="forms\Transactions\frmMainT.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forms\Transactions\frmMain.Designer.cs">
-      <DependentUpon>frmMain.cs</DependentUpon>
+    <Compile Include="forms\Transactions\frmMainT.Designer.cs">
+      <DependentUpon>frmMainT.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\Transactions\frmReturn.cs">
       <SubType>Form</SubType>
@@ -139,6 +179,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="forms\App\frmHelp.resx">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms\App\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
@@ -160,8 +203,8 @@
     <EmbeddedResource Include="forms\Transactions\frmBorrow.resx">
       <DependentUpon>frmBorrow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forms\Transactions\frmMain.resx">
-      <DependentUpon>frmMain.cs</DependentUpon>
+    <EmbeddedResource Include="forms\Transactions\frmMainT.resx">
+      <DependentUpon>frmMainT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\Transactions\frmReturn.resx">
       <DependentUpon>frmReturn.cs</DependentUpon>
@@ -197,6 +240,8 @@
     <None Include="perpusDataSet.xss">
       <DependentUpon>perpusDataSet.xsd</DependentUpon>
     </None>
+    <None Include="Perpustakaan_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -224,6 +269,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\down88.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

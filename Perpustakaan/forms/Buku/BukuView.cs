@@ -47,6 +47,7 @@ namespace Perpustakaan.forms.Buku
         public BukuView(int idBuku)
         {
             InitializeComponent();
+            this.CenterToScreen();
             this._idBuku = idBuku;
             fillForm();
         }

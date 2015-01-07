@@ -51,3 +51,75 @@ D:\Ary's Document\Perpustakaan\Perpustakaan\obj\x86\Debug\Perpustakaan.frmMain.r
 D:\Ary's Document\Perpustakaan\Perpustakaan\obj\x86\Debug\Perpustakaan.Properties.Resources.resources
 D:\Ary's Document\Perpustakaan\Perpustakaan\obj\x86\Debug\Perpustakaan.csproj.GenerateResource.Cache
 D:\Ary's Document\Perpustakaan\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.App.Settings.resources
+D:\Ary's Document\Perpustakaan\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.App.frmHelp.resources
+D:\Dropbox\STIKOM's Document\Pemrograman Visual\Perpustakaan_\Perpustakaan\bin\Debug\Perpustakaan.exe.config
+D:\Dropbox\STIKOM's Document\Pemrograman Visual\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.exe
+D:\Dropbox\STIKOM's Document\Pemrograman Visual\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.pdb
+D:\Dropbox\STIKOM's Document\Pemrograman Visual\Perpustakaan_\Perpustakaan\bin\Debug\Perpustakaan.exe
+D:\Dropbox\STIKOM's Document\Pemrograman Visual\Perpustakaan_\Perpustakaan\bin\Debug\Perpustakaan.pdb
+D:\Dropbox\STIKOM's Document\Pemrograman Visual\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.csprojResolveAssemblyReference.cache
+D:\Dropbox\STIKOM's Document\Pemrograman Visual\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.App.frmHelp.resources
+D:\Dropbox\STIKOM's Document\Pemrograman Visual\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.App.Settings.resources
+D:\Dropbox\STIKOM's Document\Pemrograman Visual\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.Buku.BukuCreateUpdate.resources
+D:\Dropbox\STIKOM's Document\Pemrograman Visual\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.Buku.BukuView.resources
+D:\Dropbox\STIKOM's Document\Pemrograman Visual\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.Buku.CategoryForm.resources
+D:\Dropbox\STIKOM's Document\Pemrograman Visual\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.Buku.CategoryMain.resources
+D:\Dropbox\STIKOM's Document\Pemrograman Visual\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.frmBuku.resources
+D:\Dropbox\STIKOM's Document\Pemrograman Visual\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.peminjaman.frmBorrow.resources
+D:\Dropbox\STIKOM's Document\Pemrograman Visual\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.Transactions.frmMain.resources
+D:\Dropbox\STIKOM's Document\Pemrograman Visual\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.Transactions.frmReturn.resources
+D:\Dropbox\STIKOM's Document\Pemrograman Visual\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.Transactions.frmView.resources
+D:\Dropbox\STIKOM's Document\Pemrograman Visual\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.frmLogin.resources
+D:\Dropbox\STIKOM's Document\Pemrograman Visual\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.frmMain.resources
+D:\Dropbox\STIKOM's Document\Pemrograman Visual\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.Properties.Resources.resources
+D:\Dropbox\STIKOM's Document\Pemrograman Visual\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.csproj.GenerateResource.Cache
+D:\Perpustakaan_\Perpustakaan\bin\Debug\Perpustakaan.exe.config
+D:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.exe
+D:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.pdb
+H:\Perpustakaan_\Perpustakaan\bin\Debug\Perpustakaan.exe.config
+H:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.exe
+H:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.pdb
+H:\Perpustakaan_\Perpustakaan\bin\Debug\Perpustakaan.exe
+H:\Perpustakaan_\Perpustakaan\bin\Debug\Perpustakaan.pdb
+H:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.csprojResolveAssemblyReference.cache
+H:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.App.frmHelp.resources
+H:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.App.Settings.resources
+H:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.Buku.BukuCreateUpdate.resources
+H:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.Buku.BukuView.resources
+H:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.Buku.CategoryForm.resources
+H:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.Buku.CategoryMain.resources
+H:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.frmBuku.resources
+H:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.peminjaman.frmBorrow.resources
+H:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.Transactions.frmReturn.resources
+H:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.Transactions.frmView.resources
+H:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.frmLogin.resources
+H:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.frmMain.resources
+H:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.Properties.Resources.resources
+H:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.csproj.GenerateResource.Cache
+H:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.Transactions.frmMainT.resources
+G:\Perpustakaan_\Perpustakaan\bin\Debug\Perpustakaan.exe.config
+G:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.exe
+G:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.pdb
+G:\Perpustakaan_\Perpustakaan\bin\Debug\Perpustakaan.exe
+G:\Perpustakaan_\Perpustakaan\bin\Debug\Perpustakaan.pdb
+G:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.csprojResolveAssemblyReference.cache
+G:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.App.frmHelp.resources
+G:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.App.Settings.resources
+G:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.Buku.BukuCreateUpdate.resources
+G:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.Buku.BukuView.resources
+G:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.Buku.CategoryForm.resources
+G:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.Buku.CategoryMain.resources
+G:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.frmBuku.resources
+G:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.peminjaman.frmBorrow.resources
+G:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.Transactions.frmMainT.resources
+G:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.Transactions.frmReturn.resources
+G:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.forms.Transactions.frmView.resources
+G:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.frmLogin.resources
+G:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.frmMain.resources
+G:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.Properties.Resources.resources
+G:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.csproj.GenerateResource.Cache
+G:\Perpustakaan_\Perpustakaan\bin\Debug\Perpustakaan.exe.manifest
+G:\Perpustakaan_\Perpustakaan\bin\Debug\Perpustakaan.application
+G:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.TrustInfo.xml
+G:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.exe.manifest
+G:\Perpustakaan_\Perpustakaan\obj\x86\Debug\Perpustakaan.application

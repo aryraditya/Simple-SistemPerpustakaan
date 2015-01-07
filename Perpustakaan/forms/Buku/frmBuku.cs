@@ -39,7 +39,7 @@ namespace Perpustakaan.forms
             fillBookGridView();
         }
 
-        public void fillBookGridView(string bookNameCriteria=null)
+        public void fillBookGridView()
         {
             dataGridView1.Rows.Clear();
             dataGridView1.Columns.Clear();
@@ -47,8 +47,15 @@ namespace Perpustakaan.forms
 
             String sql = "SELECT * FROM book AS b "+
                         "LEFT OUTER JOIN ref_category AS c ON b.category_id = c.category_id "+
-                        "WHERE book_name LIKE '%"+bookNameCriteria+"%'";
+                        "WHERE book_name LIKE '%"+textBox1.Text+"%'"+
+                        " AND category_name LIKE '%" + textBox5.Text + "%'"+
+                        " AND book_author LIKE '%" + textBox2.Text + "%'"+
+                        " AND book_publisher LIKE '%" + textBox3.Text + "%'";
+
+            if (textBox4.Text != "")
+                sql += " AND year(book_pub_date)=@year";
             SqlCommand cmd = new SqlCommand(sql,db.conn);
+            cmd.Parameters.AddWithValue("@year", textBox4.Text);
             SqlDataReader reader = cmd.ExecuteReader();
             initGridViewColumn();
             if(reader.HasRows){
@@ -91,16 +98,17 @@ namespace Perpustakaan.forms
             dataGridView1.Columns.Add(columnDelete);
             dataGridView1.Columns["book_id"].Width = 50;
             dataGridView1.Columns["book_name"].Width = 300;
-            dataGridView1.Columns["book_category"].Width = 150;
+            dataGridView1.Columns["book_category"].Width = 110;
             dataGridView1.Columns["book_author"].Width = 150;
             dataGridView1.Columns["book_publisher"].Width = 150;
             dataGridView1.Columns["book_qty"].Width = 50;
-            dataGridView1.Columns["book_casecode"].Width = 75;
+            dataGridView1.Columns["book_casecode"].Width = 50;
         }
 
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
             int idBuku = int.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
             int qtyBuku = int.Parse(dataGridView1.Rows[e.RowIndex].Cells["book_qty"].Value.ToString());
 
@@ -153,7 +161,35 @@ namespace Perpustakaan.forms
         private void textBox1_KeyUp(object sender, KeyEventArgs e)
         {
 
-            fillBookGridView(textBox1.Text);
+            //fillBookGridView();
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            fillBookGridView();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
+            fillBookGridView();
         }
     }
 }

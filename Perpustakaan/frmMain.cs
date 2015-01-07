@@ -13,7 +13,7 @@ namespace Perpustakaan
     {
         dbPerpus db = new dbPerpus();
         public forms.frmBuku frmBuku = null;
-        public forms.Transactions.frmMain frmPeminjaman = null;
+        public forms.Transactions.frmMainT frmPeminjaman = null;
         public forms.Buku.CategoryMain frmCategory = null;
         public forms.App.Settings frmSettings = null; 
 
@@ -62,7 +62,10 @@ namespace Perpustakaan
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
+            //this.WindowState = FormWindowState.Maximized;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.CenterToScreen();
         }
 
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
@@ -79,7 +82,7 @@ namespace Perpustakaan
 
         private void daftarBukuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmBuku = null;
+            //frmBuku = null;
             if (frmBuku == null)
             {
                 frmBuku = new forms.frmBuku();
@@ -124,10 +127,10 @@ namespace Perpustakaan
 
         private void transactionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmPeminjaman = null;
+            //frmPeminjaman = null;
             if (frmPeminjaman == null)
             {
-                frmPeminjaman = new forms.Transactions.frmMain();
+                frmPeminjaman = new forms.Transactions.frmMainT();
                 frmPeminjaman.MdiParent = this;
                 frmPeminjaman.FormClosed += new FormClosedEventHandler(frmPeminjaman_FormClosed);
                 frmPeminjaman.Show();
@@ -150,6 +153,12 @@ namespace Perpustakaan
             {
                 frmSettings.Activate();
             }
+        }
+
+        private void aboutEAMPerpustakaanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            forms.App.frmHelp frm = new forms.App.frmHelp();
+            frm.Show();
         }
 
     }

@@ -24,7 +24,7 @@ namespace Perpustakaan.forms.Buku
         private void fillCategory()
         {
             db.openConnection();
-            string sql = "SELECT * FROM ref_category";
+            string sql = "SELECT * FROM ref_category WHERE ";
             SqlCommand cmd = new SqlCommand(sql, db.conn);
             SqlDataReader reader = cmd.ExecuteReader();
             int no = 0;
@@ -107,6 +107,7 @@ namespace Perpustakaan.forms.Buku
         public BukuCreateUpdate(int idBuku=0)
         {
             InitializeComponent();
+            this.CenterToScreen();
             this._idBuku = idBuku;
 
 
@@ -188,7 +189,9 @@ namespace Perpustakaan.forms.Buku
 
             db.closeConnection();
 
-            (Application.OpenForms["frmBuku"] as frmBuku).fillBookGridView();
+            if(Application.OpenForms["frmBuku"] != null)
+                (Application.OpenForms["frmBuku"] as frmBuku).fillBookGridView();
+
             this.Close();
         }
 

@@ -16,6 +16,7 @@ namespace Perpustakaan.forms.App
         public Settings()
         {
             InitializeComponent();
+            this.CenterToScreen();
             if (denda.Value == null)
                 denda.Value = "0";
 

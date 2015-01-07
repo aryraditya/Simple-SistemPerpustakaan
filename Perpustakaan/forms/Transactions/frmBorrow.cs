@@ -20,6 +20,7 @@ namespace Perpustakaan.forms.peminjaman
         public frmBorrow(int _idBuku,int _idPeminjaman=0)
         {
             InitializeComponent();
+            this.CenterToScreen();
             idBuku = _idBuku;
             idPeminjaman = _idPeminjaman;
 
@@ -83,6 +84,12 @@ namespace Perpustakaan.forms.peminjaman
                     book.save();
                 }
                 MessageBox.Show("Transaksi Peminjaman berhasil disimpan", "Sukses");
+
+                if (Application.OpenForms["frmMainT"] != null)
+                    (Application.OpenForms["frmMainT"] as forms.Transactions.frmMainT).fillGridView();
+
+                if (Application.OpenForms["frmBuku"] != null)
+                    (Application.OpenForms["frmBuku"] as frmBuku).fillBookGridView();
 
                 this.Close();
             }
